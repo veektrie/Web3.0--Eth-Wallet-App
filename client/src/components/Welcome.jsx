@@ -1,5 +1,5 @@
 const Welcome = () => {
-  return <H1>Welcome</H1>;
+  return <h1>Welcome</h1>;
 };
 
 export default Welcome;
