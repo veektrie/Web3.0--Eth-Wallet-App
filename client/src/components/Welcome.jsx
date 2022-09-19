@@ -2,10 +2,10 @@ import { AiFillPlayCircle } from "react-icons/ai";
 import { SiEthereum } from "react-icons/si";
 import { BsInfoCircle } from "react-icons/bs";
 
-import { Loader } from "./";
+import { Loader } from ".";
 
-const commonStyles =
-  'const commonStyles = "min-h-[70px] sm:px-0 px-2 sm:min-w-[120px] flex justify-center items-center border-[0.5px] border-white-400 text-sm font-light text-white';
+const CommonStyles =
+  "min-h-[70px] sm:px-0 px-2 sm:min-w-[120px] flex justify-center items-center border-[0.5px] border-gray-400 text-sm font-light text-white";
 
 const Input = ({ placeholder, name, type, value, handleChange }) => (
   <input
@@ -39,16 +39,16 @@ const Welcome = () => {
             <p className="text-white text-base font-semibold">Connect Wallet</p>
           </button>
           <div className="grid sm:grid-cols-3 grid-cols-2 w-full mt-10">
-            <div className={"rounded-tl 4xl ${commonStyles}"}>Reliablity</div>
-            <div className={commonStyles}>Security</div>
-            <div className={"rounded-tr 4xl ${commonStyles}"}>Ethereum</div>
-            <div className={"rounded-bl 4xl ${commonStyles}"}>Web3.0</div>
-            <div className={commonStyles}>Low fees</div>
-            <div className={"rounded-br 4xl ${commonStyles}"}>Blockchain</div>
+            <div className={"rounded-tl-2xl ${commonStyles}"}>Reliablity</div>
+            <div className={CommonStyles}>Security</div>
+            <div className={"sm:rounded-tr-2xl ${CommonStyles}"}>Ethereum</div>
+            <div className={"sm:rounded-bl-2xl ${CommonStyles}"}>Web3.0</div>
+            <div className={CommonStyles}>Low fees</div>
+            <div className={"rounded-br-2xl ${CommonStyles}"}>Blockchain</div>
           </div>
         </div>
-        <div className="flex flex-col flex-1 items-center justify-start w-full md:mt-0 mt-10">
-          <div className="p-3 justify-end items-start flex-col rounded-xl h-40 sm:w-72 w-full my-5 eth-card white-glassmorpism">
+        <div className="flex flex-col flex-1 items-center justify-start w-full mf:mt-0 mt-10">
+          <div className="p-3 flex justify-end items-start flex-col rounded-xl h-40 sm:w-72 w-full my-5 eth-card .white-glassmorpism">
             <div className="flex justify-between flex-col w-full h-full">
               <div className="flex justify-between items-start">
                 <div className="w-10 h-10 rounded-full border-2 border-white flex justify-center items-center">
@@ -70,37 +70,31 @@ const Welcome = () => {
               name="addressTo"
               type="text"
               handleChange={() => {}}
+              className="w-full bg-transparent"
             />
             <input
               placeholder="Amount (ETH)"
               name="amount"
+              step="0.0001"
               type="number"
               handleChange={() => {}}
+              className="w-full bg-transparent"
             />
             <input
               placeholder="Keyword(Gif)"
               name="keyword"
               type="text"
               handleChange={() => {}}
+              className="w-full bg-transparent"
             />
             <input
               placeholder="Enter Message"
               name="message"
               type="text"
               handleChange={() => {}}
+              className="w-full bg-transparent"
             />
             <div className="h-[1px] w-full bg-gray-400 my-2" />
-            {isLoading ? (
-              <Loader />
-            ) : (
-              <button
-                type="button"
-                onClick={handleSubmit}
-                className="text-white w-full mt-2 border-[1px] p-2 border-[#3d4f7c] hover:bg-[#3d4f7c] rounded-full cursor-pointer"
-              >
-                Send now
-              </button>
-            )}
           </div>
         </div>
       </div>
