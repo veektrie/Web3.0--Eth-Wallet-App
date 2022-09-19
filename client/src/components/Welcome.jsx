@@ -64,7 +64,7 @@ const Welcome = () => {
               </div>
             </div>
           </div>
-          <div className="p-5 sm:w-96 w-full flex flex-col justify-start items-align blue-glassmorphism">
+          <div className="p-5 sm:w-96 w-full flex flex-col justify-start items-center blue-glassmorphism">
             <input
               placeholder="Address To"
               name="addressTo"
@@ -90,6 +90,17 @@ const Welcome = () => {
               handleChange={() => {}}
             />
             <div className="h-[1px] w-full bg-gray-400 my-2" />
+            {isLoading ? (
+              <Loader />
+            ) : (
+              <button
+                type="button"
+                onClick={handleSubmit}
+                className="text-white w-full mt-2 border-[1px] p-2 border-[#3d4f7c] hover:bg-[#3d4f7c] rounded-full cursor-pointer"
+              >
+                Send now
+              </button>
+            )}
           </div>
         </div>
       </div>
