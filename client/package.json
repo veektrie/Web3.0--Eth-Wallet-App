@@ -23,4 +23,5 @@
     "tailwindcss": "^3.1.8",
     "vite": "^3.1.0"
   }
+  "resolutions": { "eslint-loader": "2.1.2" }
 }
