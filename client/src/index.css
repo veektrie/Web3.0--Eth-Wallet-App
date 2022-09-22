@@ -1,11 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap");
 
-html {
-  padding: 0px,
-  box-sizing: border-box;
-}
+/* html {
+  box-size: border-box;
+  padding: 0;
+  margin: 0;
+} */
 
-body {
+
+
+.body {
   margin: 0;
   font-family: "Open Sans", sans-serif;
   -webkit-font-smoothing: antialiased;
