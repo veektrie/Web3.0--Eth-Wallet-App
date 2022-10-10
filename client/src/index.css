@@ -1,10 +1,10 @@
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap");
+ @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap")
 
-/* html {
+html {
   box-size: border-box;
   padding: 0;
   margin: 0;
-} */
+}
 
 
 
@@ -53,8 +53,8 @@
   border: 1px solid rgba(0, 0, 0, 0.3);
 }
 
-/* white glassmorphism */
-.white-glassmorphism {
+
+ .white-glassmorphism {
   background: rgba(255, 255, 255, 0.05);
   border-radius: 16px;
   backdrop-filter: blur(5px);
@@ -83,4 +83,4 @@
 
 @tailwind base;
 @tailwind components;
-@tailwind utilities;
+@tailwind utilities; 
