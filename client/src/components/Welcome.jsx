@@ -58,7 +58,6 @@ const Welcome = () => {
               onClick={connectWallet}
               className="flex flex-row justify-center items-center my-5 bg-[#2952e3] p-3 rounded-full cursor-pointer hover:bg-[#2546bd]"
             >
-              <AiFillPlayCircle className="text-white mr-2" />
               <p className="text-white text-base font-semibold">
                 Connect Wallet
               </p>
@@ -93,9 +92,7 @@ const Welcome = () => {
                 <BsInfoCircle fontSize={17} color="#fff" />
               </div>
               <div>
-                <p className="text-white font-light text-sm">
-                  {currentAccount}
-                </p>
+                <p className="text-white font-light text-sm">0x12asdf0...</p>
                 <p className="text-white font-semibold text-lg mt-1">
                   Ethereum
                 </p>
